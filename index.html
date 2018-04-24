@@ -1,0 +1,51 @@
+<div class=component>
+  <style>
+    :root {
+      font-family: sans-serif;
+    }
+    .component {
+      background: #50b1db;
+      display: table;
+      margin: 0 auto;
+      min-width: 200px;
+      max-width: 666px;
+      width: 80vw;
+      border: 2px solid grey;
+      padding: 2rem;
+    }
+    .story {
+      border-radius: 5px;
+      border: 1px solid silver;
+      padding: 1rem;
+      background: white;
+    }
+    .story h1, .story p {
+      color: #222;
+    }
+  </style>
+  <article class=story>
+    <header>
+      <h1>A Story</h1>
+    </header>
+    <section class=paragraphs>
+      <p>
+        Beginning
+      <p> 
+        Middle
+      <p>
+        End
+    </section>
+  </article>
+  <script>
+    "use strict";
+    {
+      const component = document.currentScript.closest('.component');
+      component.addEventListener('click', e => {
+        if ( e.target.matches('p') ) {
+          const p = e.target;
+          alert(p.innerText);
+        }
+      });
+    }
+  </script>
+</div>

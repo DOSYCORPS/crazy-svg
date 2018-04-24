@@ -1,0 +1,34 @@
+{
+  "name": "crazy-svg",
+  "version": "1.0.0",
+  "description": "render DOM as interactive image map. Insane.",
+  "main": "index.js",
+  "watch": {
+    "start": {
+      "patterns": [
+        "*"
+      ],
+      "extensions": "js,html,css",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "npm-watch",
+    "test": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosyago-corp/crazy-svg.git"
+  },
+  "author": "@dosy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dosyago-corp/crazy-svg/issues"
+  },
+  "homepage": "https://github.com/dosyago-corp/crazy-svg#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "npm-watch": "^0.3.0"
+  }
+}
